@@ -143,7 +143,7 @@ code {
 .cardImage {
   /* width: 100vw; */
   height: 100vh;
-  background-image: url("Images/9+\ Blue\ Blossom\ Gold\ Floral\ Wedding\ Invitation\ Templates.jpg");
+  background-image: url("Images/blueBG.jpg");
   position: relative;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -156,6 +156,7 @@ code {
   overflow: hidden;
   overflow-y: hidden;
   overflow-x: hidden;
+  color: #fff;
   /* transform: rotate(90deg); */
 }
 
@@ -168,7 +169,7 @@ code {
 }
 
 .content-body {
-  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   /* margin-bottom: 60%; */
   /* Adjust spacing, font sizes, and other styles as needed */
@@ -339,6 +340,7 @@ code {
     overflow: hidden;
     overflow-y: hidden;
     overflow-x: hidden;
+    color: #fff;
   }
 
   .card-Content {
