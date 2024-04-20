@@ -28,12 +28,11 @@ export default function Welcome() {
             </i>
           </h2>
           <h4>
-            <i>30th April 2024</i>
+            <i>11am, 30th April 2024</i>
           </h4>
 
           <h4>
             Venue:
-            <br />
             <p
               onClick={() => {
                 window.location.replace(
@@ -42,7 +41,7 @@ export default function Welcome() {
               }}
               style={{ cursor: "pointer" }}
             >
-              <u>
+              <u style={{ color: " #000" }}>
                 <i>
                   Shri Vishwaradhya Devasthan <br />
                   Vijay Nagar Colony, <br />
@@ -51,13 +50,11 @@ export default function Welcome() {
               </u>
             </p>
           </h4>
-          <h3>
-            Regards,
-            <br />
-            <i>
-              <b>Akash & Family</b>
-            </i>
-          </h3>
+
+          <h4>
+            Please join us on Engagement and make it more beautiful with your
+            presence.
+          </h4>
         </div>
       </div>
     </div>

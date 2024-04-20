@@ -182,7 +182,7 @@ code {
 }
 
 .content-body h2 {
-  color: #e6a817;
+  color: #010101;
 }
 
 /* Typing animation */
@@ -206,7 +206,7 @@ code {
   border-right: 2px solid #e6a817;
   margin-right: -2px;
   animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  background: linear-gradient(to right, #ff9966, #ff5e62);
+  background: linear-gradient(to right, #060606, #303741);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
