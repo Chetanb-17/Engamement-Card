@@ -28,7 +28,7 @@ export default function Welcome() {
             </i>
           </h2>
           <h4>
-            <i>11am, 30th April 2024</i>
+            <i>11AM onwards, 30th April 2024</i>
           </h4>
 
           <h4>
@@ -43,8 +43,9 @@ export default function Welcome() {
             >
               <u style={{ color: " #000" }}>
                 <i>
-                  Shri Vishwaradhya Devasthan <br />
-                  Vijay Nagar Colony, <br />
+                  Shri Vishwaradhya Temple <br />
+                  near Aland check post,
+                  <br />
                   Kalburgi.
                 </i>
               </u>
