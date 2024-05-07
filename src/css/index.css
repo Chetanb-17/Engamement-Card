@@ -2356,6 +2356,9 @@ a.text-dark:focus {
   );
   width: 100%; /* Make sure the container takes the full width */
   height: 100vh; /* Set the height to cover the entire parent container (viewport in this case) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white; /* Set text color to white */
   font-size: 24px;
 }

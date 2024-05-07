@@ -39,7 +39,7 @@ function Signup() {
                     }}
                     noValidate
                     autoComplete="off"
-                    className="mr-2"
+                    className="mr-1"
                   >
                     <TextField
                       id="outlined-basic"
