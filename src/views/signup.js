@@ -2,21 +2,12 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import {
-  Button,
-  Grid,
-  TextField,
-  Box,
-  Checkbox,
-  Divider,
-  FormControlLabel,
-  FormGroup,
-} from "@mui/material";
-import GoogleIcon from "@mui/icons-material/Google";
+import { Button, Grid, TextField, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-function Login() {
+function Signup() {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="login-container">
@@ -31,9 +22,9 @@ function Login() {
                   component="div"
                   color="primary"
                 >
-                  ~Login to your workspace~
+                  Create a new account
                 </Typography>
-                <br />
+
                 <Typography variant="body2" color="text.secondary">
                   <Box
                     component="form"
@@ -52,7 +43,23 @@ function Login() {
                   >
                     <TextField
                       id="outlined-basic"
-                      label="Phone Number / Email"
+                      label="Usename"
+                      variant="outlined"
+                      size="small"
+                      fullWidth
+                      className="custom-textfield"
+                    />
+                    <TextField
+                      id="outlined-basic"
+                      label="Email"
+                      variant="outlined"
+                      size="small"
+                      fullWidth
+                      className="custom-textfield"
+                    />
+                    <TextField
+                      id="outlined-basic"
+                      label="Phone Number"
                       variant="outlined"
                       size="small"
                       fullWidth
@@ -66,27 +73,16 @@ function Login() {
                       fullWidth
                       className="custom-textfield"
                     />
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        width: "100%",
-                      }}
-                    >
-                      <FormGroup>
-                        <FormControlLabel
-                          control={<Checkbox defaultChecked />}
-                          label="Remeber me"
-                          size="small"
-                        />
-                      </FormGroup>
-                      <Typography variant="body2" component="div" size="small">
-                        Forgot Password
-                      </Typography>
-                    </div>
+                    <TextField
+                      id="outlined-basic"
+                      label="re-enter password"
+                      variant="outlined"
+                      size="small"
+                      fullWidth
+                      className="custom-textfield"
+                    />
                     <Button variant="contained" fullWidth>
-                      Login
+                      Signup
                     </Button>
                     <div
                       style={{
@@ -102,23 +98,18 @@ function Login() {
                         size="small"
                         className="mt-2"
                       >
-                        Don't have an account?
+                        Already have an account?
                         <u
                           className="font-weight-bolder text-black track-link"
                           onClick={() => {
-                            navigate("/signup");
+                            navigate("/");
                           }}
                         >
                           {" "}
-                          Signup
+                          Signin
                         </u>
                       </Typography>
                     </div>
-                    <br /> <br />
-                    <Divider className="mb-4">OR USE EMAIL</Divider>
-                    <Button variant="outlined" fullWidth>
-                      <GoogleIcon /> &ensp; Sign in with Google
-                    </Button>
                   </Box>
                 </Typography>
               </CardContent>
@@ -130,4 +121,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;
